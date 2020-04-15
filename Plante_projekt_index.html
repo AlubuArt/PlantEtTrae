@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en"
+xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./plante_projekt.css" rel="stylesheet" type="text/css">
+    <title>Hvor længe overlever min plante?</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WB83L3Q');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB83L3Q"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <!-- Header container + logo-->
+    <div class="container-fluid">
+      <div id="header" class="justify-content">
+        <div class="logo">
+          <img src="header_logo.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- Header container + logo slut-->
+    <!-- Main container -->
+    <div class="container">
+      <div id="result">
+        <div class="row">
+          <div class="col-sm">Hvilken type plante har du?
+          </div>
+        </div>
+        <!--plantetype-->
+        <div class="row">
+          <div class="col-sm">
+            <div class="dropdownmenu plantetype">
+              <select onchange="changePlantetype()" id="selectPlantetype" onsubmit="return false;">
+                <option value="1">Plantetype</option>
+                <option value="pilea">Pilea</option>
+                <option value="monstera">Monstera</option>
+                <option value="paradisetrae">Paradistræ</option>
+                <option value="kaktus">Kaktus</option>
+                <option value="bregne">Bregne</option>
+                <option value="eukalyptus">Eukalytus</option>
+                <option value="sukkulent">Sukkulent</option>
+                <option value="vedikke">Ved ikke</option>
+              </select>
+            </div>
+          </div>
+        </div><!--plantetype-->
+        <div class="row">
+          <div class="col-sm">
+            Hvor ofte vander du den?
+          </div>
+        </div>
+        <!--vanding-->
+        <div class="row">
+          <div class="col-sm">
+            <div class="dropdown">
+              <select onchange="" id="selectVanding" onsubmit="return false;">
+                <option value="_blank">Vanding</option>
+                <option value="0">0 gange pr. måned</option>
+                <option value="1">1 gang pr. måned</option>
+                <option value="2">2 gange pr. måned</option>
+                <option value="3">3 gange pr. måned</option>
+                <option value="4">4 gange pr. måned</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <a href="">
+              <button id="visMigButton" class="button" type="button" name="button" onclick="buttonClick(); return false;">Vis mig!</button>
+            </a>
+          </div>
+        </div>
+      <!--output card -->
+      <div class="outputContainer";>
+        <div class="row">
+          <div class="col-sm" id="output">
+            <p id="result1"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm" id="thisIsHowYouDo">
+            <p id="result2"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm" id="optimalText">
+            <p id="carePlante"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm" id="trees">
+            <div id="backgroundPicture"></div>
+              <p id="tree" class="col-sm" ></p>
+                  <span id="buttonAppear" > <!-- <a class="pointer" href="https://plant-et-trae.dk/saadan-kan-du-stoette/" target="_blank"></a></span> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+               <!--Der mangler at blive JS til knappen - document.getElementById(donateButton).innerHTML.style.display-->
+          </div>
+        </div>
+      </div>
+      </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="madeBy">
+              Denne side er lavet af Jacob Christensen - @JC VisuelDesign 2020</p>
+              <a href="http://www.jcvisueldesign.dk" target="_blank">
+                <p class="webLink">www.jcvisueldesign.dk</p>
+              </a>
+            </div>
+            
+            <a href="https://www.linkedin.com/in/jacob-christensen-konceptudvikling/" target="_blank">
+              <img class="linkedin_favicon"src="linkedin_favicon.png" alt="">
+            </a>
+          
+           
+          </div>
+        </div>
+
+
+
+    </div>
+    <!-- Main container slut-->
+    <!-- Footer-->
+    <div class="row">
+      <div class="col-sm">
+        <div class="footer">
+          <p>Denne side er på hverken sponsoreret, finansieret, eller på anden måde forbundet med Plant et Træ ogranisationen. </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./script.js">
+    </script>
+    <script src="./plantetype.js">
+    </script>
+
+
+    </script>
+  </body>
+</html>
